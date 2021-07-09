@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  
+ <section class="container ">
+  <div class="row  ">
+
+    <div class="col-md-12 col-sm-12">
+      <div class="image">
+      <img src="images/pic_bulboff.gif" class="mr-30" id="img" alt="">
+    </div>
+  </div>
+
+      <div class="col-md-6 col-sm-6">
+        <div class="switch1">
+        <input type="button" onclick="on()" value="switch on" class="form-control bg-success text-light">
+      </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <div class="switch2">
+        <input type="button" onclick="off()" value="switch off" class="form-control bg-danger text-light"> 
+      </div> 
+      </div>
+    </div>
+</section>
+<script>
+  
+    alert("Welcome, Kindly use the switch");
+
+ 
+function on(){
+  document.getElementById("img").src = "images/pic_bulbon.gif";
+}
+function off(){
+  document.getElementById("img").src = "images/pic_bulboff.gif";
+}
+
+</script>
+
+</body>
+</html>
