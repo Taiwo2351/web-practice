@@ -1,16 +1,26 @@
+*{ 
+  box-sizing: border-box;
+}
+
 body{
 margin: 0;
+height: 100%;
+width: 100%;
+}
+p{
+  padding: 20px;
 }
 .container{
   width: 400px;
   background-color: blue;
-  height: 350px;
-  margin: 10px auto;
+  height: 100%;
+  
 }
  .image{
   height: 200px;
   margin:40px;
   width: 200px;
+  margin: auto;
 }
 .switch1{
   width: 150px;
