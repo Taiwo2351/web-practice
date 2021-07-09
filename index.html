@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hidihtee Sandals</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
-
 <body>
-  <section class="container">
-    <!-- First Header Html Structure -->
-    <header class="top-menu">
-      <ul class=nav-menu>
-        <li><a href="home">Home</a></li>
-        <li><a href="about us">About us</a></li>
-        <li><a href="Contact us">Contact Us</a></li>
-      </ul>
+  
+ <section class="container ">
+  <div class="row  ">
 
-      <form action="#">
-        <input type="text" placeholder="search for new products">
-      </form>
+    <div class="col-md-12 col-sm-12">
+      <div class="image">
+      <img src="images/pic_bulboff.gif" class="mr-30" id="img" alt="">
+    </div>
+  </div>
 
-      <ul class=social-menu>
-        <li><a href="https://facebook.com/taiwo.idowu522066"><img src="images/facebook.png" alt="facebook image"></a>
-        </li>
-        <li><a href="https://instagram.com/id_taiwo"><img src="images/instagram.png" alt="instagram image"></a></li>
-        <li><a href="https://wa.me/+2348143028387"><img src="images/whatsapp icon.png" alt="whatsapp image"></a></li>
-    </header>
-
-    <!-- Second Header HTML Structure -->
-    <section class="second-header">
-      <div id=header1>
-        <a href="About us">Hidihtee Sandals</a>
+      <div class="col-md-6 col-sm-6">
+        <div class="switch1">
+        <input type="button" onclick="on()" value="switch on" class="form-control bg-success text-light">
+      </div>
       </div>
 
-
-      <ul class="main-menu">
-        <li><a href="our products">Our Products |</a></li>
-        <li><a href="apprentice form">Apprentice Form |</a></li>
-        <li><a href="gallery">Gallery|</a></li>
-      </ul>
-    </section>
-    <section class="banner"> 
-    <div><img src="images/sandalmanufacturer5.jpg" alt="Image of a leather"></div> 
-    <div><img src="images/banner sandal.jpg" alt="Image of a leather"></div>
-      <span> WE MAKE QUALITIES MATERIALS</span>
-    </section>
-
-  </section>
+      <div class="col-md-6 col-sm-6">
+        <div class="switch2">
+        <input type="button" onclick="off()" value="switch off" class="form-control bg-danger text-light"> 
+      </div> 
+      </div>
+    </div>
+</section>
+<script>
   
+    alert("Welcome, Kindly use the switch");
 
 
-  </section>
+ 
+function on(){
+  document.getElementById("img").src = "images/pic_bulbon.gif";
+}
+function off(){
+  document.getElementById("img").src = "images/pic_bulboff.gif";
+}
+
+</script>
+
 </body>
-
 </html>
